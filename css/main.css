@@ -1,0 +1,117 @@
+
+:root{
+  --bs-primary: #4F4F4F;
+  --bs-secondary: #BCFD4C;
+
+}
+
+/* For all pages */
+h1,h2,h3{
+  color: var(--bs-primary);
+}
+
+footer{
+    background-color: #4f4f4f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   /*  padding-top: 15px;
+   margin-top: 50px; */
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer i{
+    color: #BCFD4C;
+
+}
+/********************************************************** Home Page ***************************************************************/
+.navsection{
+  background-color: #4F4F4F;
+}
+
+.navhome{
+  background-color: #4F4F4F;
+}
+
+
+#h1home, #phome{
+  background-color: var(--bs-primary);
+  color: var(--bs-secondary);
+  opacity: 90%;
+}
+
+.choose-us h3{
+  background-color: var(--bs-primary);
+  color: var(--bs-secondary);
+}
+
+
+
+
+/**************************************************************** About Page *******************************************************************/
+
+/* Banner */
+ .about{
+  background-color: #4f4f4f;
+ }
+.banner-about{
+    background: #4f4f4f url(../images/about-header.jpg);
+    width:100%;
+ height: 700px;
+ object-fit: cover;
+ background-size: cover;
+ opacity: 0.86;
+  }
+  
+  .banner-info{
+    width: 700px;
+    height: 400px;
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  .banner-info h1{
+    color: white;
+  }
+  .banner-info h2{
+    color: #BCFD4C; 
+  }
+
+
+/**************************************Our Story***********************/
+
+/************************************** What we are all About Section *************/
+  #what-we-are{
+    background: #4f4f4f url(../images/what-we-all-are.jpeg) repeat center;
+  }
+
+  #what-we-are h3{
+    color: #BCFD4C;
+  }
+
+  /********************************* Contact Page *************************************/
+ 
+.nav{
+  background: #4f4f4f url(../images/contact-header.jpg);
+  width:100%;
+height: 700px;
+object-fit: cover;
+background-size: cover;
+opacity: 0.86;
+}
+
+
+  .form{
+    background: #4f4f4f url(../images/texture-1155341_1920.jpg) no-repeat;
+
+  }
+
+  .form h3{
+    color: var(--bs-secondary);
+  }
+  .form label{
+   color: #BCFD4C;
+  }
