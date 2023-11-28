@@ -15,12 +15,12 @@
 
 <body>
   <!---------------------------------------------------------------Nav------------------------------------------------------------------------------------>
-  <header role="banner" class="bg-dark">
+  <header itemscope itemtype="https://schema.org/LocalBusiness" role="banner" class="bg-dark">
     <a href="#main" aria-label="go to main" class="skip">Skip to Main content</a>
     <nav role="navigation" class="navbar navbar-expand-md about" data-bs-theme="dark">
       <div class="container-fluid ps-5"><!--Opens container-->>
         <a aria-label="go to home page" class="navbar-brand" href="#home"><!--Logo home-->
-          <img id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
+          <img itemprop="logo"  id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
         </a>
         <div class="collapse navbar-collapse justify-content-around" id="menu"> 
           <ul class="navbar-nav flex-row flex-no-wrap">
@@ -50,10 +50,10 @@
   </header>    
   <!----------------------------------------------------------------------------Banner Section-------------------------------------------------------------->
   <main id="main">
-    <section role="region" id="home" class="banner-about py-1">
+    <section itemscope itemtype="https://schema.org/LocalBusiness"  role="region" id="home" class="banner-about py-1">
     <div class="container-lg banner-info bg-dark text-light bg-opacity-75 py-4"> <!--Opens container--> <!--Has backround image in css-->
-      <h2>Ilusio Design</h2>
-      <h1 class="display-1">
+      <h2 itemprop="legalName">Ilusio Design</h2>
+      <h1 itemprop="seeks" class="display-1">
        About Us
       </h1>
       <p>
@@ -68,12 +68,12 @@
     
   
 <!-------------------------------------------------------------------------Our Story---------------------------------------------------------------------->
-      <section role="region" class="our-story">
+      <section itemscope itemtype="https://schema.org/LocalBusiness"  role="region" class="our-story">
         <div class="container">
         <div class="row our-story"><!--Opens row-->
           <h2 class="text-center mt-5 mb-4">Our Story</h2>
             <div class="col-sm-12 col-md-12 col-lg-6"><!--Opens col-->
-              <p>Welcome to <strong>Ilusio Design</strong>, where creativity and innovation 
+              <p itemprop="knowsAbout" >Welcome to <strong>Ilusio Design</strong>, where creativity and innovation 
               are merged to turn your digital dreams into your website. 
               We specialize in creating custom websites that reflect the unique style of our clients.
               </p>
@@ -99,12 +99,12 @@
 <p></p>
 <!--------------------------------------------------------------------What we are all about Section------------------------------------------------------>
 
-        <section role="region" id="what-we-are">
+        <section itemscope itemtype="https://schema.org/LocalBusiness"  role="region" id="what-we-are">
           <div class="container">
           <div class="row"><!--Opens row-->
             <h2 class="text-center text-light pb-3 pt-4">What We Are All About</h2>
 <div class="col-sm-12 col-md-4 col-lg-4"><!--Opens Col-->
- <h3>Plannning</h3>
+ <h3 itemprop="keywords">Plannning</h3>
  <p class="text-light pb-5">Before we jump into the creative process of designing, 
   we start understanding your needs, objectives, and target audience.
    We plan every aspect of your web design project. 
@@ -113,7 +113,7 @@
 </div><!--Closes col-->
 
 <div class="col-sm-12 col-md-4 col-lg-4"><!--Opens col-->
- <h3>Designing</h3>
+ <h3 keywords>Designing</h3>
  <p class="text-light pb-5">
   Here is where creativity and innovation start. 
   We create designs that are visually attractive and easy to understand for clients. 
@@ -122,7 +122,7 @@
 </div><!--Closes col-->
 
 <div class="col-sm-12 col-md-4 col-lg-4"><!--Opens col-->
- <h3>Developing</h3>
+ <h3 keywords>Developing</h3>
  <p class="text-light pb-5">
   This is the step to turn your dream website into reality. 
   We focus on clean code, optimal functionality, and the best user experiences. 
@@ -139,26 +139,30 @@
         <a id="contactusButton" href="contact.html" aria-label="go to contact us section">Contact Us</a>
 <!--Finish Contact Butoon-->
 <!-------------------------------------------------------------------------Footer----------------------------------------------------------------------->
-      <footer role="contentinfo"> <!--Need to add why is just center in the middle-->
-        <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-      <p class="text-light">
-        <i class="bi bi-c-circle"></i> 2023.Ilusio Design All rights reserved.
-      </p>  
-    </div>
-    <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-      <p class="text-light">Ottawa, On Canada</p>
-    </div>
-    <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-      <a href="#mailto:muri0031@algonquinlive.com" class="text-light">
-        <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
-        </a>
-        </div>
+      
+    <footer itemscope itemtype="https://schema.org/LocalBusiness"> <!--Need to add why is just center in the middle-->
+      <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-      <p class="text-light">
-        <i class="bi bi-telephone-fill"></i>
-        613-869-6873
-      </p>
-    </div>
-    </div><!--Closes row-->
-      </footer>
+    <p itemprop="legalName" class="text-light">
+      <i class="bi bi-c-circle"></i> 2023.Ilusio Design All rights reserved.
+    </p>  
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+    <p itemprop="address" class="text-light">Ottawa, On Canada</p>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+    <a itemprop="email" aria-label="go to email" href="#mailto:muri0031@algonquinlive.com" class="text-light">
+      <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
+      </a>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+    <p class="text-light">
+      <i class="bi bi-telephone-fill"></i>
+      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873">(613) 613-869-6873</a>
+    </p>
+  </div>
+  </div><!--Closes row-->
+    </footer role="contentinfo">
+    </body>
+    
+    </html>

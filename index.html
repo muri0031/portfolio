@@ -16,12 +16,12 @@
 <body>
   <!--------------------------------------------------------------- Nav Section ----------------------------------------------------------------------->
   <div class="navsection"><!--opens navsection-->
-    <header role="banner">
+    <header itemscope itemtype="https://schema.org/LocalBusiness" role="banner">
       <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">Skip to Main content</a>
     <nav role="navigation" class="navbar navbar-expand-md navhome" data-bs-theme="dark">
       <div class="container-fluid ps-5"><!--Opens container-->>
         <a  aria-label="go to home page" class="navbar-brand" href="index.html"><!--Logo home-->
-          <img id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
+          <img itemprop="logo" id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
         </a>
         <div class="collapse navbar-collapse justify-content-around" id="menu"> <!--Opens wrap-->
           <ul class="navbar-nav flex-row flex-no-wrap">
@@ -50,16 +50,17 @@
       </div><!--Closes container-->
     </nav>
   </header>
-  <main id="main">   
+  
      <!-------------------------------------------------------------- Banner Section -------------------------------------------------------------->
-    <section role="region" id="home" class="banner-home py-1">
+     <main itemscope itemprop="https://schema.org/LocalBusiness" id="main">   
+     <section  role="region" id="home" class="banner-home py-1">
      <div role="img" aria-label="home page header" class="card text-bg-dark"><!--opens wrap-->
       <img src="images/home.jpg" class="card-img" alt="home">
       <div class="card-img-overlay home d-flex flex-column justify-content-start align-items-center"> <!--opens container-->
-      <h1 id="hhome" class="display-1 p-4 rounded">
+      <h1 itemprop="legalName" id="hhome" class="display-1 p-4 rounded">
         Ilusio Design
        </h1>
-       <p id="phome" class="p-4 text-light rounded">
+       <p id="phome" itemprop="slogan" class="p-4 text-light rounded">
         The perfect combination of creativity, innovation, and experience
       </p>
       </div> <!--Closes container-->
@@ -74,7 +75,7 @@
 <!-------------------------------------------------------------------------Why choose us section----------------------------------------------------------->
       <section role="region" class="choose-us">
         <div class="container"><!--Opens wrap-->
-        <h2 class="text-center rounded">Why to choose us</h2>
+        <h2 itemprop="seeks" class="text-center rounded">Why to choose us</h2>
         <h3 class="text-center mt-4 mb-5">With ilusio Design You get</h3> 
             <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6"><!--Opens container-->
@@ -94,13 +95,14 @@
         </div><!--Closes wrap-->
 
 <!---------------------------------------------------------------------Portfolio section---------------------------------------------------------------->
-        <section><!--Portfolio-->
-            <h2 class="text-center"> Portfolio</h2>
+        <section role="region"><!--Portfolio-->
+            <h2 itemprop="makesOffer" class="text-center"> Portfolio</h2>
         <div class="container"><!--Opens wrap-->
           <div class="row">
 <div role="img" aria-label="own work 1" class="col"><!--Closes container-->
 <img>
 <p>Lone Starfish</p>
+<img itemprop="photo">
 <p>Student work</p>
 </div><!--Closes container-->
 
@@ -122,9 +124,9 @@
       </div>
       </section>
 <!----------------------------------------------------------------------Reviews section----------------------------------------------------------------->
-      <section> 
+      <section role="region"> 
         <div class="container">
-        <h2 class="text-center">Reviews</h2>
+        <h2 itemprop="review" class="text-center">Reviews</h2>
         <div><!--Opens wrap-->
 <div><!--Opens container-->
    
@@ -143,18 +145,18 @@
       </div>
       </section>
         <!-----------------------------------------------------------------Services------------------------------------------------>
-     <section>
+     <section role="region">
       <div class="container"><!--Opens container--><!--Need to reorder images because in md,sm are ot in order-->
-     <h2 class="text-center mb-5">Services</h2>
+     <h2 itemprop="makesOffer" class="text-center mb-5">Services</h2>
 
     <!---------------------web design------------------->
         <div class="row"><!--Opens container--> 
            <div role="img" aria-label="web design" class="rev col-sm-12 col-md-12 col-lg-6 mt-4 mb-4 text-center">
             <img src="images/web-design.jpg" alt="Web Design" class="img-fluid rounded" width="400px" height="400px">
           </div> 
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <h3 class="text-center mt-4 mb-4">Web Design</h3>
-            <p>We are specialists in creating website designs that are visually attractive 
+          <div itemprop="makesOffer" class="col-sm-12 col-md-12 col-lg-6">
+            <h3 itemprop="makesOffer" class="text-center mt-4 mb-4">Web Design</h3>
+            <p itemprop="description">We are specialists in creating website designs that are visually attractive 
                 and easy to understand for clients.
                  We are passionate about making every website digitally aesthetically. 
                  Our services cover every aspect of your website, from responsive 
@@ -162,7 +164,7 @@
                   and search engine optimization (SEO). 
             </p>
 
-            <p>
+            <p itemprop="description">
                 We understand that your website is your most powerful tool, 
                 and we are dedicated to making it fascinating, and effective.
                  We are experts in ensuring that every website we design reflects your brand's identity
@@ -172,13 +174,13 @@
         </div><!--Closes container-->
 
       <!---------------------web development------------------->  
-        <div class="row"><!--Opens container--> 
+        <div itemprop="makesOffer" class="row"><!--Opens container--> 
             <div role="img" aria-label="web development" class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
               <img src="images/web-dev.jpg" alt="Web Development" class="img-fluid rounded" width="400px" height="400px">
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 order-1">
-                <h3 class="text-center mt-4 mb-4">Web development</h3>
-                <P>Ilusio Design offers exceptional web development services
+                <h3 itemprop="makesOffer" class="text-center mt-4 mb-4">Web development</h3>
+                <P itemprop="description">Ilusio Design offers exceptional web development services
                      that turn your digital dreams to your own website. 
                      We prioritize clean coding, responsive designs, 
                      and user-friendly interfaces, ensuring your website looks fantastic 
@@ -189,33 +191,33 @@
             </div>
             <!---------------------wordpress development------------------->
         </div><!--Closes container-->
-        <div class="row"><!--Opens container-->
+        <div itemprop="makesOffer" class="row"><!--Opens container-->
           <div role="img" aria-label="wordpress development" class="col-sm-12 col-md-12 col-lg-6 mt-4 text-center">
             <img src="images/wordpress.jpg" alt="wordpress development" class="img-fluid rounded" width="400px" height="400px">
           </div>
           <div class="col-sm-12 col-md-12 col-lg-6">
-            <h3 class="text-center mt-3 mt-4">Wordpress Development</h3>
-            <p>We specialize in WordPress development.
+            <h3 itemprop="makesOffer" class="text-center mt-3 mt-4">Wordpress Development</h3>
+            <p itemprop="description">We specialize in WordPress development.
                We transform your ideas into functional websites.
                 Whether you need a custom theme, plugin development,
                  or content management solutions, 
               we are experts in making your WordPress site notable
             </p>
-            <p>
+            <p itemprop="description">
               We focus on creating user-friendly, responsive, 
               and SEO-optimized websites that look fantastic and also deliver an exceptional
                experience for your visitors. 
             </p>
           </div>
           <!---------------------SEO------------------->
-          <div class="row"> <!--Opens container-->
+          <div itemprop="makesOffer" class="row"> <!--Opens container-->
            <div role="img" aria-label="SEO" class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
              <img src="images/seo.jpg" class="img-fluid rounded" width="400px" height="400px">
            </div>
            <div class="col-sm-12 col-md-12 col-lg-6 mt-4 order-1">
-            <h3 class="text-center">Search Engine Optimization (SEO)</h3>
+            <h3 itemprop="makesOffer" class="text-center">Search Engine Optimization (SEO)</h3>
 
-            <p>
+            <p itemprop="description">
               At Ilusio Design, we offer complete content management system (CMS) 
               and search engine optimization (SEO) services to empower your online presence. 
               Our CMS solutions give you control over your website's content,
@@ -227,29 +229,30 @@
      </div><!--Closes wrap-->
      </section role="region" ><!--Closes services-->
 <article>
-     <div role="heading" aria-level="4 class="container">
+     <div role="heading" aria-level="4" class="container">
 <h4 class="text-center mt-5 mb-5">Contact us today for a free consultation and discuss your web design needs.</h4>
      </div>
     </article>
-    <footer> <!--Need to add why is just center in the middle-->
+
+    <footer itemscope itemtype="https://schema.org/LocalBusiness"> <!--Need to add why is just center in the middle-->
       <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p class="text-light">
+    <p itemprop="legalName" class="text-light">
       <i class="bi bi-c-circle"></i> 2023.Ilusio Design All rights reserved.
     </p>  
   </div>
   <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p class="text-light">Ottawa, On Canada</p>
+    <p itemprop="address" class="text-light">Ottawa, On Canada</p>
   </div>
   <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <a aria-label="go to email" href="#mailto:muri0031@algonquinlive.com" class="text-light">
+    <a itemprop="email" aria-label="go to email" href="#mailto:muri0031@algonquinlive.com" class="text-light">
       <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
       </a>
       </div>
       <div class="col-sm-12 col-md-4 col-lg-3 p-2">
     <p class="text-light">
       <i class="bi bi-telephone-fill"></i>
-      <a aria-label="613.869.6873" href="tel:6138696873">(613) 613-869-6873</a>
+      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873">(613) 613-869-6873</a>
     </p>
   </div>
   </div><!--Closes row-->

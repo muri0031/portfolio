@@ -12,14 +12,14 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-
+<!--Ask if itmp type and item scope goes in each section or just in main to covr all sections-->
 <body>
-  <header>
+  <header itemscope itemtype="https://schema.org/LocalBusiness">
     <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">Skip to Main content</a>
     <nav role="navigation" class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
       <div class="container-fluid ps-5 nav d-flex flex-row align-items-start"><!--Opens container-->>
         <a class="navbar-brand"aria-label="go to home page" href="index.html"><!--Logo home-->
-          <img id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
+          <img itemprop="logo" id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
         </a>
         <div class="collapse navbar-collapse justify-content-around " id="menu"> 
           <ul class="navbar-nav flex-row flex-no-wrap pt-5">
@@ -48,19 +48,21 @@
     </nav>
   </header> 
 <!---------------------------------------------------------------------------Contact Us section------------------------------------------------------->
-  <main id="main">       <!--Needs to make biiger labels in form and put mapp in center-->
+  <main itemscope itemtype="https://schema.org/LocalBusiness" id="main">       <!--Needs to make biiger labels in form and put mapp in center-->
       <section role="region">
         <div class="container mt-5">
         <h1 class="text-center mb-5">Contact Us</h1>
         <div class="row"><!--Opens row-->
         <div class="col-sm-12 col-md-6 col-lg-6 mt-4"><!--Opens col-->
           <h4>Email</h4>
-          <p>mri0031@algonquinlive.com</p>
+          <p itemprop="email">mri0031@algonquinlive.com</p>
           <h4>Phone Number</h4>
-          <p>613-869-6873</p>
+          <p itemprop="telephone">613-869-6873</p>
           <h4>Location</h4>
-          <p>Ottawa, ON Canada</p>
+          <p itemprop="address">Ottawa, ON Canada</p>
         </div><!--Closes col-->
+
+        <!--Contact Form-->
         <div role="form" id="contact-info" aria-label="Contact information" class="col-sm-12 col-md-6 col-lg-6 m4 form"><!--Opens col-->
                <h3 class="text-center pt-4 pb-4">Leave us a Message</h3>
                <form action="/submit" method="get">
@@ -146,28 +148,30 @@
         
         </section><!--Closes FAQ-->
       </main>
-        <footer> <!--Need to add why is just center in the middle-->
-          <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-        <p class="text-light">
-          <i class="bi bi-c-circle"></i> 2023.Ilusio Design All rights reserved.
-        </p>  
+       
+    <footer itemscope itemtype="https://schema.org/LocalBusiness"> <!--Need to add why is just center in the middle-->
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+    <p itemprop="legalName" class="text-light">
+      <i class="bi bi-c-circle"></i> 2023.Ilusio Design All rights reserved.
+    </p>  
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+    <p itemprop="address" class="text-light">Ottawa, On Canada</p>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+    <a itemprop="email" aria-label="go to email" href="#mailto:muri0031@algonquinlive.com" class="text-light">
+      <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
+      </a>
       </div>
       <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-        <p class="text-light">Ottawa, On Canada</p>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-        <a href="#mailto:muri0031@algonquinlive.com" class="text-light">
-          <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
-          </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-        <p class="text-light">
-          <i class="bi bi-telephone-fill"></i>
-          613-869-6873
-        </p>
-      </div>
-      </div><!--Closes row-->
-        </footer role="contentinfo">
-       </body>
-       </html>
+    <p class="text-light">
+      <i class="bi bi-telephone-fill"></i>
+      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873">(613) 613-869-6873</a>
+    </p>
+  </div>
+  </div><!--Closes row-->
+    </footer role="contentinfo">
+    </body>
+    
+    </html>
