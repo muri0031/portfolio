@@ -14,9 +14,13 @@ footer{
     background-color: #4f4f4f;
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-around;
    /*  padding-top: 15px;
    margin-top: 50px; */
+}
+footer .row{
+  width: 100%;
 }
 
 footer a{
@@ -27,6 +31,31 @@ footer i{
     color: #BCFD4C;
 
 }
+
+/*Skip Links*/
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
 /********************************************************** Home Page ***************************************************************/
 .navsection{
   background-color: #4F4F4F;

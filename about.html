@@ -15,32 +15,33 @@
 
 <body>
   <!---------------------------------------------------------------Nav------------------------------------------------------------------------------------>
-  <header class="bg-dark">
-    <nav class="navbar navbar-expand-md about" data-bs-theme="dark">
+  <header role="banner" class="bg-dark">
+    <a href="#main" aria-label="go to main" class="skip">Skip to Main content</a>
+    <nav role="navigation" class="navbar navbar-expand-md about" data-bs-theme="dark">
       <div class="container-fluid ps-5"><!--Opens container-->>
-        <a class="navbar-brand" href="#home"><!--Logo home-->
+        <a aria-label="go to home page" class="navbar-brand" href="#home"><!--Logo home-->
           <img id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
         </a>
         <div class="collapse navbar-collapse justify-content-around" id="menu"> 
           <ul class="navbar-nav flex-row flex-no-wrap">
             <li class="nav-item ps-5 pe-5">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link text-light" aria-label="go to home Page" href="index.html">Home</a>
             </li>
             <li class="nav-item ps-5 pe-5">
-              <a class="nav-link text-light" href="about.html">About Us</a>
+              <a class="nav-link active" aria-label="go to about page" aria-current="page" href="about.html">About Us</a>
             </li>
             <li class="nav-item ps-5 pe-4">
-              <a class="nav-link text-light" href="contact.html">Contact</a>
+              <a class="nav-link text-light" aria-label="go to contact page" href="contact.html">Contact</a>
             </li>
             <!--Media Icons-->
           </ul>
         </div>
           <ul class="navbar-nav flex-row flex-wrap text-light">
             <li class="nav-item col-6 col-md-auto ps-5">
-              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-linkedin" role="link"></i>
             </li>
             <li class="nav-item col-6 col-md-auto ps-5 pe-5">
-              <i class="bi bi-github"></i>
+              <i class="bi bi-github" role="link"></i>
             </li>
           </ul>
         </div>
@@ -48,8 +49,8 @@
     </nav>
   </header>    
   <!----------------------------------------------------------------------------Banner Section-------------------------------------------------------------->
-  <main>
-    <section id="home" class="banner-about py-1">
+  <main id="main">
+    <section role="region" id="home" class="banner-about py-1">
     <div class="container-lg banner-info bg-dark text-light bg-opacity-75 py-4"> <!--Opens container--> <!--Has backround image in css-->
       <h2>Ilusio Design</h2>
       <h1 class="display-1">
@@ -67,7 +68,7 @@
     
   
 <!-------------------------------------------------------------------------Our Story---------------------------------------------------------------------->
-      <section class="our-story">
+      <section role="region" class="our-story">
         <div class="container">
         <div class="row our-story"><!--Opens row-->
           <h2 class="text-center mt-5 mb-4">Our Story</h2>
@@ -89,16 +90,16 @@
                 ensuring that every project we start is a piece of art.
               </p>
             </div><!--Closes col-->
-            <div class="col-sm-12 col-md-12 col-lg-6 mb-5"><!--opens col-->
+            <div role="img" aria-label="Passion Lead Us Here" class="col-sm-12 col-md-12 col-lg-6 mb-5"><!--opens col-->
 <img src="images/our-story.jpg" alt="Passion Lead Us Here" class="w-100" id="about-image">
             </div><!--Closes Col-->
         </div><!--Closes row-->
       </div><!--Closes container-->
         <section><!--Closes Our Story-->
-
+<p></p>
 <!--------------------------------------------------------------------What we are all about Section------------------------------------------------------>
 
-        <section id="what-we-are">
+        <section role="region" id="what-we-are">
           <div class="container">
           <div class="row"><!--Opens row-->
             <h2 class="text-center text-light pb-3 pt-4">What We Are All About</h2>
@@ -138,7 +139,7 @@
         <a id="contactusButton" href="contact.html" aria-label="go to contact us section">Contact Us</a>
 <!--Finish Contact Butoon-->
 <!-------------------------------------------------------------------------Footer----------------------------------------------------------------------->
-      <footer> <!--Need to add why is just center in the middle-->
+      <footer role="contentinfo"> <!--Need to add why is just center in the middle-->
         <div class="row">
           <div class="col-sm-12 col-md-4 col-lg-3 p-2">
       <p class="text-light">

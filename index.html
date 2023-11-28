@@ -16,22 +16,23 @@
 <body>
   <!--------------------------------------------------------------- Nav Section ----------------------------------------------------------------------->
   <div class="navsection"><!--opens navsection-->
-    <header>
-    <nav class="navbar navbar-expand-md navhome" data-bs-theme="dark">
+    <header role="banner">
+      <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">Skip to Main content</a>
+    <nav role="navigation" class="navbar navbar-expand-md navhome" data-bs-theme="dark">
       <div class="container-fluid ps-5"><!--Opens container-->>
-        <a class="navbar-brand" href="#home"><!--Logo home-->
+        <a  aria-label="go to home page" class="navbar-brand" href="index.html"><!--Logo home-->
           <img id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
         </a>
         <div class="collapse navbar-collapse justify-content-around" id="menu"> <!--Opens wrap-->
           <ul class="navbar-nav flex-row flex-no-wrap">
             <li class="nav-item ps-5 pe-5">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a aria-current="page" aria-label="go to home Page" href="index.html" class="nav-link active" >Home</a>
             </li>
             <li class="nav-item ps-5 pe-5">
-              <a class="nav-link text-light" href="about.html">About Us</a>
+              <a aria-label="go to about page" href="about.html"class="nav-link text-light">About Us</a>
             </li>
             <li class="nav-item ps-5 pe-4">
-              <a class="nav-link text-light" href="contact.html">Contact</a>
+              <a aria-label="go to contact page" href="contact.html" class="nav-link text-light" >Contact</a>
             </li>
           </ul> 
           </div><!--Closes wrap-->
@@ -39,23 +40,23 @@
           <div><!--Opens wrap-->
             <ul class="navbar-nav flex-row flex-wrap text-light">
             <li class="nav-item col-6 col-md-auto ps-5">
-              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-linkedin" role="link"></i>
             </li>
             <li class="nav-item col-6 col-md-auto ps-5 pe-5">
-              <i class="bi bi-github"></i>
+              <i class="bi bi-github" role="link"></i>
             </li>
           </ul>
         </div><!--Closes wrap-->
       </div><!--Closes container-->
     </nav>
   </header>
-  <main>   
+  <main id="main">   
      <!-------------------------------------------------------------- Banner Section -------------------------------------------------------------->
-    <section id="home" class="banner-home py-1">
-     <div class="card text-bg-dark"><!--opens wrap-->
+    <section role="region" id="home" class="banner-home py-1">
+     <div role="img" aria-label="home page header" class="card text-bg-dark"><!--opens wrap-->
       <img src="images/home.jpg" class="card-img" alt="home">
       <div class="card-img-overlay home d-flex flex-column justify-content-start align-items-center"> <!--opens container-->
-      <h1 id="h1home" class="display-1 p-4 rounded">
+      <h1 id="hhome" class="display-1 p-4 rounded">
         Ilusio Design
        </h1>
        <p id="phome" class="p-4 text-light rounded">
@@ -65,13 +66,13 @@
      </div> <!--Closes wrap--> 
      </div> <!--Closes navsection-->
     <!-----------------------------------------------------------------H4 Info----------------------------------------------------------------------->  
-    <section> 
+    <section role="region"> 
       <div class="container mt-5 mb-5">
       <h4> We are here to convert your dreams into reality. Whether you're a small business owner, an entrepreneur, or a big company we have the perfect web design strategy for you.</h4>
     </div>
     </section>
 <!-------------------------------------------------------------------------Why choose us section----------------------------------------------------------->
-      <section class="choose-us">
+      <section role="region" class="choose-us">
         <div class="container"><!--Opens wrap-->
         <h2 class="text-center rounded">Why to choose us</h2>
         <h3 class="text-center mt-4 mb-5">With ilusio Design You get</h3> 
@@ -86,7 +87,7 @@
     <li>  	Competitive prices with an excellent quality of work</li> 
 </ul>
             </div><!--Closes container-->
-            <div class="col-sm-12 col-md-12 col-lg-6 mb-5"><!--opens container-->
+            <div role="img" aria-label="design section " class="col-sm-12 col-md-12 col-lg-6 mb-5"><!--opens container-->
 <img src="images/why-choose-us.jpg" alt="Design" class="img-fluid">
             </div><!--Closes Container-->
           </div>
@@ -97,23 +98,23 @@
             <h2 class="text-center"> Portfolio</h2>
         <div class="container"><!--Opens wrap-->
           <div class="row">
-<div class="col"><!--Closes container-->
+<div role="img" aria-label="own work 1" class="col"><!--Closes container-->
 <img>
 <p>Lone Starfish</p>
 <p>Student work</p>
 </div><!--Closes container-->
 
-<div class="col"><!--Opens container-->
+<div role="img" aria-label="own work 2" class="col"><!--Opens container-->
     <p>SEICO</p>
     <p>Painters</p>
 </div><!--Closes container-->
 </div>
 <div class="row">
-<div class="col"><!--Closes container-->
+<div role="img" aria-label="own work 3" class="col"><!--Closes container-->
     <p>Cake Up Bakery</p>
     <p>Bakery</p>
 </div><!--Closes container-->
-<div class="col"><!--Opens container-->
+<div role="img" aria-label="own work 4" class="col"><!--Opens container-->
     <p>Star Media</p>
     <p>Marketing</p>
 </div><!--Closes container-->
@@ -148,10 +149,10 @@
 
     <!---------------------web design------------------->
         <div class="row"><!--Opens container--> 
-           <div class="col-sm-12 col-md-12 col-lg-6 mt-4 mb-4 text-center">
+           <div role="img" aria-label="web design" class="rev col-sm-12 col-md-12 col-lg-6 mt-4 mb-4 text-center">
             <img src="images/web-design.jpg" alt="Web Design" class="img-fluid rounded" width="400px" height="400px">
           </div> 
-           <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="col-sm-12 col-md-12 col-lg-6">
             <h3 class="text-center mt-4 mb-4">Web Design</h3>
             <p>We are specialists in creating website designs that are visually attractive 
                 and easy to understand for clients.
@@ -167,12 +168,12 @@
                  We are experts in ensuring that every website we design reflects your brand's identity
                   and has an unforgettable user experience to connect with your audience.
             </p>
-           </div>
+          </div>
         </div><!--Closes container-->
 
       <!---------------------web development------------------->  
         <div class="row"><!--Opens container--> 
-            <div class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
+            <div role="img" aria-label="web development" class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
               <img src="images/web-dev.jpg" alt="Web Development" class="img-fluid rounded" width="400px" height="400px">
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 order-1">
@@ -189,8 +190,8 @@
             <!---------------------wordpress development------------------->
         </div><!--Closes container-->
         <div class="row"><!--Opens container-->
-          <div class="col-sm-12 col-md-12 col-lg-6 mt-4 text-center">
-            <img src="images/wordpress.jpg" alt="SEO" class="img-fluid rounded" width="400px" height="400px">
+          <div role="img" aria-label="wordpress development" class="col-sm-12 col-md-12 col-lg-6 mt-4 text-center">
+            <img src="images/wordpress.jpg" alt="wordpress development" class="img-fluid rounded" width="400px" height="400px">
           </div>
           <div class="col-sm-12 col-md-12 col-lg-6">
             <h3 class="text-center mt-3 mt-4">Wordpress Development</h3>
@@ -208,7 +209,7 @@
           </div>
           <!---------------------SEO------------------->
           <div class="row"> <!--Opens container-->
-           <div class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
+           <div role="img" aria-label="SEO" class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
              <img src="images/seo.jpg" class="img-fluid rounded" width="400px" height="400px">
            </div>
            <div class="col-sm-12 col-md-12 col-lg-6 mt-4 order-1">
@@ -224,9 +225,9 @@
         </div><!--Closes container-->
         
      </div><!--Closes wrap-->
-     </section><!--Closes services-->
+     </section role="region" ><!--Closes services-->
 <article>
-     <div class="container">
+     <div role="heading" aria-level="4 class="container">
 <h4 class="text-center mt-5 mb-5">Contact us today for a free consultation and discuss your web design needs.</h4>
      </div>
     </article>
@@ -241,18 +242,18 @@
     <p class="text-light">Ottawa, On Canada</p>
   </div>
   <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <a href="#mailto:muri0031@algonquinlive.com" class="text-light">
+    <a aria-label="go to email" href="#mailto:muri0031@algonquinlive.com" class="text-light">
       <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
       </a>
       </div>
       <div class="col-sm-12 col-md-4 col-lg-3 p-2">
     <p class="text-light">
       <i class="bi bi-telephone-fill"></i>
-      613-869-6873
+      <a aria-label="613.869.6873" href="tel:6138696873">(613) 613-869-6873</a>
     </p>
   </div>
   </div><!--Closes row-->
-    </footer>
+    </footer role="contentinfo">
     </body>
     
     </html>
