@@ -18,42 +18,44 @@
     <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">Skip to Main content</a>
     <nav role="navigation" class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
       <div class="container-fluid ps-5 nav d-flex flex-row align-items-start"><!--Opens container-->>
-        <a class="navbar-brand"aria-label="go to home page" href="index.html"><!--Logo home-->
-          <img itemprop="logo" id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
+        <a class="navbar-brand" aria-label="go to home page" href="index.html"><!--Logo home-->
+          <img itemprop="logo" id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120" height="100"><!-- [Logo] -->
         </a>
-        <div class="collapse navbar-collapse justify-content-around " id="menu"> 
+        <div class="collapse navbar-collapse justify-content-around navbut " id="menu"> 
           <ul class="navbar-nav flex-row flex-no-wrap pt-5">
             <li class="nav-item ps-5 pe-5">
               <a class="nav-link active" aria-label="go to home Page" href="index.html">Home</a>
             </li>
             <li class="nav-item ps-5 pe-5">
-              <a class="nav-link text-light" aria-label="go to about Page" href="about.html">About Us</a>
+              <a class="nav-link" aria-label="go to about Page" href="about.html">About Us</a>
             </li>
             <li class="nav-item ps-5 pe-4">
-              <a class="nav-link text-light" aria-current="page" aria-label="go to contact page"  href="contact.html">Contact</a>
+              <a class="nav-link" aria-current="page" aria-label="go to contact page"  href="contact.html">Contact</a>
             </li>
             <!--Media Icons-->
           </ul>
         </div>
           <ul class="navbar-nav flex-row flex-wrap text-light pt-5">
             <li class="nav-item col-6 col-md-auto ps-5">
-              <i class="bi bi-linkedin" role="link"></i>
-            </li>
-            <li class="nav-item col-6 col-md-auto ps-5 pe-5">
-              <i class="bi bi-github" role="link"></i>
+              <a class="iconssocial" href="https://www.linkedin.com/in/karla-murillo-113b25297/"> <i class="bi bi-linkedin" role="link"></i>
+              </a> 
+             </li>
+             <li class="nav-item col-6 col-md-auto ps-5 pe-5">
+              <a class="iconssocial" href="https://github.com/muri0031/muri0031.github.io"><i class="bi bi-github" role="link"></i>
+              </a>
             </li>
           </ul>
         </div>
-      </div>
     </nav>
   </header> 
 <!---------------------------------------------------------------------------Contact Us section------------------------------------------------------->
+<!--Infomation about the company-->
   <main itemscope itemtype="https://schema.org/LocalBusiness" id="main">       <!--Needs to make biiger labels in form and put mapp in center-->
       <section role="region">
         <div class="container mt-5">
         <h1 class="text-center mb-5">Contact Us</h1>
-        <div class="row"><!--Opens row-->
-        <div class="col-sm-12 col-md-6 col-lg-6 mt-4"><!--Opens col-->
+        <div class="row justify-content-center"><!--Opens row-->
+        <div class="col-sm-12 col-md-6 col-lg-6 mt-4  adress"><!--Opens col-->
           <h4>Email</h4>
           <p itemprop="email">mri0031@algonquinlive.com</p>
           <h4>Phone Number</h4>
@@ -77,7 +79,9 @@
                    <input id="submit" type="submit" value="Submit">
                   </form>
            </div><!--Closes col-->
-           <div class="col-md-12 col-md-6 col-lg-12 mt-4"><!--opens col-->
+
+           <!--Map-->
+           <div class="col-md-12 col-md-6 col-lg-6 mt-4 justify-content-center"><!--opens col-->
             <h3 class="text-center mb-5 mt-4">Map</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359540.0384709239!2d-76.1298991350991!3d45.24968242926801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1700363339585!5m2!1sen!2sca" 
             width="600" height="450" style="border:0;"
@@ -90,7 +94,7 @@
         </section><!--Closes Contact-->
 
         <section role="region"><!--Opens FAQ-->
-          <div class="container mt-5 wrap-faq"><!--Opens wrap-->
+          <div class="container mt-5 mb-5 wrap-faq"><!--Opens wrap-->
              <h2 class="text-center">FAQ</h2>
           
     <div class="row mt-4">        
@@ -149,29 +153,31 @@
         </section><!--Closes FAQ-->
       </main>
        
-    <footer itemscope itemtype="https://schema.org/LocalBusiness"> <!--Need to add why is just center in the middle-->
+    <footer itemscope itemtype="https://schema.org/LocalBusiness" role="contentinfo"> <!--Need to add why is just center in the middle-->
       <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-3 p-2">
     <p itemprop="legalName" class="text-light">
-      <i class="bi bi-c-circle"></i> 2023.Ilusio Design All rights reserved.
+      <i class="bi bi-c-circle"></i> 2023 Ilusio Design
     </p>  
   </div>
   <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p itemprop="address" class="text-light">Ottawa, On Canada</p>
+    <p itemprop="address" class="text-light">
+      <i class="bi bi-geo-fill"></i>
+      Ottawa, On Canada</p>
   </div>
   <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <a itemprop="email" aria-label="go to email" href="#mailto:muri0031@algonquinlive.com" class="text-light">
+    <a itemprop="email" aria-label="go to email" href="mailto:muri0031@algonquinlive.com" class="bfooter">
       <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
       </a>
       </div>
       <div class="col-sm-12 col-md-4 col-lg-3 p-2">
     <p class="text-light">
       <i class="bi bi-telephone-fill"></i>
-      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873">(613) 613-869-6873</a>
+      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873" class="bfooter">(613) 613-869-6873</a>
     </p>
   </div>
   </div><!--Closes row-->
-    </footer role="contentinfo">
+    </footer>
     </body>
     
     </html>

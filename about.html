@@ -20,32 +20,33 @@
     <nav role="navigation" class="navbar navbar-expand-md about" data-bs-theme="dark">
       <div class="container-fluid ps-5"><!--Opens container-->>
         <a aria-label="go to home page" class="navbar-brand" href="#home"><!--Logo home-->
-          <img itemprop="logo"  id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
+          <img itemprop="logo"  id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120" height="100"><!-- [Logo] -->
         </a>
-        <div class="collapse navbar-collapse justify-content-around" id="menu"> 
+        <div class="collapse navbar-collapse justify-content-around navbut" id="menu"> 
           <ul class="navbar-nav flex-row flex-no-wrap">
             <li class="nav-item ps-5 pe-5">
-              <a class="nav-link text-light" aria-label="go to home Page" href="index.html">Home</a>
+              <a class="nav-link" aria-label="go to home Page" href="index.html">Home</a>
             </li>
             <li class="nav-item ps-5 pe-5">
-              <a class="nav-link active" aria-label="go to about page" aria-current="page" href="about.html">About Us</a>
+              <a class="nav-link active" aria-current="page" aria-label="go to about page" href="about.html">About Us</a>
             </li>
             <li class="nav-item ps-5 pe-4">
-              <a class="nav-link text-light" aria-label="go to contact page" href="contact.html">Contact</a>
+              <a class="nav-link" aria-label="go to contact page" href="contact.html">Contact</a>
             </li>
             <!--Media Icons-->
           </ul>
         </div>
           <ul class="navbar-nav flex-row flex-wrap text-light">
             <li class="nav-item col-6 col-md-auto ps-5">
-              <i class="bi bi-linkedin" role="link"></i>
-            </li>
-            <li class="nav-item col-6 col-md-auto ps-5 pe-5">
-              <i class="bi bi-github" role="link"></i>
+              <a class="iconssocial" href="https://www.linkedin.com/in/karla-murillo-113b25297/"> <i class="bi bi-linkedin" role="link"></i>
+              </a> 
+             </li>
+             <li class="nav-item col-6 col-md-auto ps-5 pe-5">
+              <a class="iconssocial" href="https://github.com/muri0031/muri0031.github.io"><i class="bi bi-github" role="link"></i>
+              </a>
             </li>
           </ul>
         </div>
-      </div>
     </nav>
   </header>    
   <!----------------------------------------------------------------------------Banner Section-------------------------------------------------------------->
@@ -91,18 +92,39 @@
               </p>
             </div><!--Closes col-->
             <div role="img" aria-label="Passion Lead Us Here" class="col-sm-12 col-md-12 col-lg-6 mb-5"><!--opens col-->
-<img src="images/our-story.jpg" alt="Passion Lead Us Here" class="w-100" id="about-image">
+              <picture>
+                <!--our story-->
+                <source srcset="images/our-story-600_x_600.jpg,
+                                images/our-story-1200_x_1200.jpg, 2x,
+                                images/our-story-1800_x_1800.jpg, 3x"
+                          media="(min-width: 821px)"/>
+            
+                        
+                <source srcset="images/our-story-400_x_400.jpg,
+                                images/our-story-800_x_800.jpg 2x,
+                                images/our-story-1200_x_1200.jpg 3x"
+                        media="(min-width: 392px)"/>
+            
+            
+                <source srcset="images/our-story-200_x_200.jpg,
+                                images/jennifer/jennifer-400_x_400.jpg 2x,
+                                images/jennifer/jennifer-600_x_600.jpg 3x"
+                        media="(max-width: 391px)"/>
+            
+                <img src="images/our-story-600_x_600.jpg"
+                 alt="Our Story">
+              </picture>
             </div><!--Closes Col-->
         </div><!--Closes row-->
       </div><!--Closes container-->
-        <section><!--Closes Our Story-->
-<p></p>
+    </section><!--Closes Our Story-->
+
 <!--------------------------------------------------------------------What we are all about Section------------------------------------------------------>
 
         <section itemscope itemtype="https://schema.org/LocalBusiness"  role="region" id="what-we-are">
-          <div class="container">
+          <div class="container mb-4">
           <div class="row"><!--Opens row-->
-            <h2 class="text-center text-light pb-3 pt-4">What We Are All About</h2>
+            <h2 class="text-center text-light pb-3 pt-5">What We Are All About</h2>
 <div class="col-sm-12 col-md-4 col-lg-4"><!--Opens Col-->
  <h3 itemprop="keywords">Plannning</h3>
  <p class="text-light pb-5">Before we jump into the creative process of designing, 
@@ -113,7 +135,7 @@
 </div><!--Closes col-->
 
 <div class="col-sm-12 col-md-4 col-lg-4"><!--Opens col-->
- <h3 keywords>Designing</h3>
+ <h3 itemprop="keywords">Designing</h3>
  <p class="text-light pb-5">
   Here is where creativity and innovation start. 
   We create designs that are visually attractive and easy to understand for clients. 
@@ -122,7 +144,7 @@
 </div><!--Closes col-->
 
 <div class="col-sm-12 col-md-4 col-lg-4"><!--Opens col-->
- <h3 keywords>Developing</h3>
+ <h3 itemprop="keywords" >Developing</h3>
  <p class="text-light pb-5">
   This is the step to turn your dream website into reality. 
   We focus on clean code, optimal functionality, and the best user experiences. 
@@ -132,37 +154,42 @@
           </div><!--Closes row-->
         </div><!--Closes container-->
         </section><!--Closes What we are-->
-      </main>
       <!----------------------------------------------------------------Contact Button------------------------------------------------------------------>
 
-      <div class="button"> 
-        <a id="contactusButton" href="contact.html" aria-label="go to contact us section">Contact Us</a>
+      <div class=" container d-flex"> 
+        <button class="btn ms-auto p-2 ps-3 pe-3 m-4 mb-5 rounded button" id="contactusButton" href="contact.html" aria-label="go to contact us section">Contact Us
+        </button> 
+        </div>
 <!--Finish Contact Butoon-->
+
+      </main>
 <!-------------------------------------------------------------------------Footer----------------------------------------------------------------------->
       
-    <footer itemscope itemtype="https://schema.org/LocalBusiness"> <!--Need to add why is just center in the middle-->
+    <footer itemscope itemtype="https://schema.org/LocalBusiness" role="contentinfo"> <!--Need to add why is just center in the middle-->
       <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-3 p-2">
     <p itemprop="legalName" class="text-light">
-      <i class="bi bi-c-circle"></i> 2023.Ilusio Design All rights reserved.
+      <i class="bi bi-c-circle"></i> 2023 Ilusio Design
     </p>  
   </div>
   <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p itemprop="address" class="text-light">Ottawa, On Canada</p>
+    <p itemprop="address" class="text-light">
+      <i class="bi bi-geo-fill"></i>
+      Ottawa, On Canada</p>
   </div>
   <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <a itemprop="email" aria-label="go to email" href="#mailto:muri0031@algonquinlive.com" class="text-light">
+    <a itemprop="email" aria-label="go to email" href="mailto:muri0031@algonquinlive.com" class="bfooter">
       <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
       </a>
       </div>
       <div class="col-sm-12 col-md-4 col-lg-3 p-2">
     <p class="text-light">
       <i class="bi bi-telephone-fill"></i>
-      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873">(613) 613-869-6873</a>
+      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873" class="bfooter">(613) 613-869-6873</a>
     </p>
   </div>
   </div><!--Closes row-->
-    </footer role="contentinfo">
+    </footer>
     </body>
     
     </html>

@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
  <!--Bootstrap Icons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+ <!--Link animations-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -19,7 +21,7 @@
     <header itemscope itemtype="https://schema.org/LocalBusiness" role="banner">
       <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">Skip to Main content</a>
     <nav role="navigation" class="navbar navbar-expand-md navhome" data-bs-theme="dark">
-      <div class="container-fluid ps-5"><!--Opens container-->>
+      <div class="container-fluid ps-5 navbut"><!--Opens container-->>
         <a  aria-label="go to home page" class="navbar-brand" href="index.html"><!--Logo home-->
           <img itemprop="logo" id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
         </a>
@@ -29,21 +31,23 @@
               <a aria-current="page" aria-label="go to home Page" href="index.html" class="nav-link active" >Home</a>
             </li>
             <li class="nav-item ps-5 pe-5">
-              <a aria-label="go to about page" href="about.html"class="nav-link text-light">About Us</a>
+              <a aria-label="go to about page" href="about.html" class="nav-link ">About Us</a>
             </li>
             <li class="nav-item ps-5 pe-4">
-              <a aria-label="go to contact page" href="contact.html" class="nav-link text-light" >Contact</a>
+              <a aria-label="go to contact page" href="contact.html" class="nav-link " >Contact</a>
             </li>
           </ul> 
           </div><!--Closes wrap-->
             <!--Media Icons--> 
           <div><!--Opens wrap-->
             <ul class="navbar-nav flex-row flex-wrap text-light">
-            <li class="nav-item col-6 col-md-auto ps-5">
-              <i class="bi bi-linkedin" role="link"></i>
+             <li class="nav-item col-6 col-md-auto ps-5">
+             <a class="iconssocial" href="https://www.linkedin.com/in/karla-murillo-113b25297/"> <i class="bi bi-linkedin" role="link"></i>
+             </a> 
             </li>
             <li class="nav-item col-6 col-md-auto ps-5 pe-5">
-              <i class="bi bi-github" role="link"></i>
+             <a class="iconssocial" href="https://github.com/muri0031/muri0031.github.io"><i class="bi bi-github" role="link"></i>
+             </a>
             </li>
           </ul>
         </div><!--Closes wrap-->
@@ -51,21 +55,23 @@
     </nav>
   </header>
   
+  <main itemscope itemprop="https://schema.org/LocalBusiness" id="main"> 
      <!-------------------------------------------------------------- Banner Section -------------------------------------------------------------->
-     <main itemscope itemprop="https://schema.org/LocalBusiness" id="main">   
+
      <section  role="region" id="home" class="banner-home py-1">
      <div role="img" aria-label="home page header" class="card text-bg-dark"><!--opens wrap-->
       <img src="images/home.jpg" class="card-img" alt="home">
       <div class="card-img-overlay home d-flex flex-column justify-content-start align-items-center"> <!--opens container-->
       <h1 itemprop="legalName" id="hhome" class="display-1 p-4 rounded">
-        Ilusio Design
+      Ilusio Design
        </h1>
-       <p id="phome" itemprop="slogan" class="p-4 text-light rounded">
-        The perfect combination of creativity, innovation, and experience
+       <p id="phome" itemprop="slogan" class="p-4 rounded">
+       <strong> The perfect combination of creativity, innovation, and experience</strong>
       </p>
       </div> <!--Closes container-->
      </div> <!--Closes wrap--> 
      </div> <!--Closes navsection-->
+    </section>
     <!-----------------------------------------------------------------H4 Info----------------------------------------------------------------------->  
     <section role="region"> 
       <div class="container mt-5 mb-5">
@@ -75,7 +81,7 @@
 <!-------------------------------------------------------------------------Why choose us section----------------------------------------------------------->
       <section role="region" class="choose-us">
         <div class="container"><!--Opens wrap-->
-        <h2 itemprop="seeks" class="text-center rounded">Why to choose us</h2>
+        <h2 itemprop="seeks" class="text-center rounded pt-5 pb-3">Why to choose us</h2>
         <h3 class="text-center mt-4 mb-5">With ilusio Design You get</h3> 
             <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6"><!--Opens container-->
@@ -89,70 +95,205 @@
 </ul>
             </div><!--Closes container-->
             <div role="img" aria-label="design section " class="col-sm-12 col-md-12 col-lg-6 mb-5"><!--opens container-->
-<img src="images/why-choose-us.jpg" alt="Design" class="img-fluid">
+<img src="images/why-choose-us.jpg" alt="Design" class="img-fluid pb-5">
             </div><!--Closes Container-->
           </div>
         </div><!--Closes wrap-->
 
 <!---------------------------------------------------------------------Portfolio section---------------------------------------------------------------->
         <section role="region"><!--Portfolio-->
-            <h2 itemprop="makesOffer" class="text-center"> Portfolio</h2>
+            <h2 itemprop="makesOffer" class="text-center pt-3 pb-2" > Portfolio</h2>
         <div class="container"><!--Opens wrap-->
-          <div class="row">
-<div role="img" aria-label="own work 1" class="col"><!--Closes container-->
-<img>
-<p>Lone Starfish</p>
-<img itemprop="photo">
-<p>Student work</p>
-</div><!--Closes container-->
+          <div class="row m-4 d-flex justify-content-center">
+<div class="col-sm-12 col-md-5 col-lg-5 portfolio m-1"><!--Opens col-->
 
-<div role="img" aria-label="own work 2" class="col"><!--Opens container-->
-    <p>SEICO</p>
-    <p>Painters</p>
-</div><!--Closes container-->
-</div>
-<div class="row">
-<div role="img" aria-label="own work 3" class="col"><!--Closes container-->
-    <p>Cake Up Bakery</p>
-    <p>Bakery</p>
-</div><!--Closes container-->
-<div role="img" aria-label="own work 4" class="col"><!--Opens container-->
-    <p>Star Media</p>
-    <p>Marketing</p>
-</div><!--Closes container-->
-        </div><!--Closes Wrap-->
+<picture>
+  <!--star fish-->
+  <source srcset="images/starfish-web-450_x_300.png,
+                  images/starfish-web-900_x_600.png 2x,
+                  images/starfish-web-1350_x_900.png 3x"
+            media="(min-width: 821px)"/>
+
+          
+  <source srcset="images/starfish-web-400_x_266.png,
+                  images/starfish-web-800_x_532.png 2x,
+                  images/starfish-web-1200_x_798.png 3x"
+          media="(min-width: 392px)"/>
+
+
+  <source srcset="images/starfish-web-300_x_200.png,
+                  images/starfish-web-600_x_400.png 2x,
+                  images/starfish-web-900_x_600.png 3x"
+          media="(max-width: 391px)"/>
+
+  <img class="img-fluid" src="images/starfish-web-400_x_266.png"
+   alt="Our Story">
+</picture>
+<h4 class="text-light text-center pt-3"> Lone Starfish</h4>
+<p class="text-center">Student work</p>
+</div><!--Closes col-->
+
+<div class="col-sm-12 col-md-5 col-lg-5 portfolio m-1"><!--Opens col--> 
+  <picture class="img-fluid">
+    <!--SEICO-->
+    <source srcset="images/seico-web-450_x_300.png,
+                    images/seico-web-900_x_600.png 2x,
+                    images/seico-web-1350_x_900.png 3x"
+              media="(min-width: 821px)"/>
+  
+            
+    <source srcset="images/seico-web-400_x_266.png,
+                    images/seico-web-800_x_532.png 2x,
+                    images/seico-web-1200_x_798.png 3x"
+            media="(min-width: 392px)"/>
+  
+  
+    <source srcset="images/seico-web-300_x_200.png,
+                    images/seico-web-600_x_400.png 2x,
+                    images/seico-web-900_x_600.png 3x"
+            media="(max-width: 391px)"/>
+  
+    <img class="img-fluid" src="images/seico-web-400_x_266.png"
+     alt="SEICO Website">
+  </picture>
+  
+  <h4 class="text-light text-center pt-3">SEICO</h4>
+    <p class="text-center">Painters</p>
+</div><!--Closes col-->
+</div><!--closes row-->
+<!--Cake Up Bakery-->
+<div class="row m-4 pb-5 d-flex justify-content-center"><!--opens row-->
+<div class="col-sm-12 col-md-5 col-lg-5 portfolio m-1"><!--opens col-->
+  <picture class="img-fluid">
+    <!--Cake Up-->
+    <source srcset="images/cakeup-web-450_x_300.png,
+                    images/cakeup-web-900_x_600.png 2x,
+                    images/cakeup-web-1350_x_900.png 3x"
+              media="(min-width: 821px)"/>
+  
+            
+    <source srcset="images/cakeup-web-400_x_266.png,
+                    images/cakeup-web-800_x_532.png 2x,
+                    images/cakeup-web-1200_x_798.png 3x"
+            media="(min-width: 392px)"/>
+  
+  
+    <source srcset="images/cakeup-web-300_x_200.png,
+                    images/cakeup-web-600_x_400.png 2x,
+                    images/cakeup-web-900_x_600.png 3x"
+            media="(max-width: 391px)"/>
+  
+    <img class="img-fluid" src="images/cakeup-web-800_x_532.png"
+     alt="Cake Up Bakery">
+  </picture>
+  <h4 class="text-light text-center pt-3">Cake Up Bakery</h4>
+  <p class="text-center">Bakery</p>
+</div><!--Closes col-->
+<!--Starmedia-->
+<div  class="col-sm-12 col-md-5 col-lg-5 portfolio m-1"><!--Opens col-->
+  <picture class="img-fluid">
+    <!--Cake Up-->
+    <source srcset="images/starmedia-web-450_x_300.png,
+                    images/srtarmedia-web-900_x_600.png 2x,
+                    images/starmedia-web-1350_x_900.png 3x"
+              media="(min-width: 821px)"/>
+  
+            
+    <source srcset="images/starmedia-web-400_x_266.png,
+                    images/starmedia-web-800_x_532.png 2x,
+                    images/starmedia-web-1200_x_798.png 3x"
+            media="(min-width: 392px)"/>
+  
+  
+    <source srcset="images/starmedia-web-300_x_200.png,
+                    images/starmedia-web-600_x_400.png 2x,
+                    images/starmedia-web-900_x_600.png 3x"
+            media="(max-width: 391px)"/>
+  
+    <img class="img-fluid" src="starmedia/cakeup-web-800_x_532.png"
+     alt="Starmedia">
+  </picture>
+  <h4 class="text-light text-center pt-3">Star Media</h4>
+  <p class="text-center">Marketing</p>
+</div><!--Closes col-->
+  </div><!--Closes row-->
       </div>
       </section>
 <!----------------------------------------------------------------------Reviews section----------------------------------------------------------------->
-      <section role="region"> 
-        <div class="container">
-        <h2 itemprop="review" class="text-center">Reviews</h2>
-        <div><!--Opens wrap-->
-<div><!--Opens container-->
-   
+      <section role="region" itemscope itemtype="https://schema.org/LocalBusiness"> 
+        <h2 itemprop="review" class="text-center pt-4 pb-2">Reviews</h2>
+        <div class="container mt-5 bg-secondary-subtle">   
+          <div class="row">
+       
+       <div class="col-sm-12 col-md-6 col-lg-4 review">
+      <h3 class="text-center"> Kelly Moore</h3>
+      <i class="bi bi-google"></i>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  In egestas erat imperdiet sed. Magna fermentum iaculis eu non diam.  
+              </p>
+          
+                  <span data-rating="1/5">⭐⭐⭐⭐⭐</span>
+                
+        </div><!--Closes col-->
 
-</div><!--Closes container-->
+        <div  class="col-sm-12 col-md-6 col-lg-4 review">
+        <h3 class="text-center"> Jennifer Clarkson</h3>
+        <i class="bi bi-google"></i>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    In egestas erat imperdiet sed. Magna fermentum iaculis eu non diam.  
+                </p>
+            
+                    <span data-rating="1/5">⭐⭐⭐⭐⭐</span>
+          </div><!--Closes col-->
 
-<div><!--Opens container-->
-
-</div><!--Closes container-->
-
-<div><!--Opens container-->
-
-</div><!--Closes container-->
-
-        </div><!--Closes wrap-->
+          <div class="col-sm-12 col-md-6 col-lg-4 review" mb-5>
+          <h3 class="text-center"> Bryan Sandler</h3>
+          <i class="bi bi-google"></i>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                      In egestas erat imperdiet sed. Magna fermentum iaculis eu non diam.  
+                  </p>
+              
+                      <span data-rating="1/5">⭐⭐⭐⭐⭐</span>                
+            </div><!--Closes col-->
+        </div> <!--Closes row-->
       </div>
       </section>
         <!-----------------------------------------------------------------Services------------------------------------------------>
      <section role="region">
       <div class="container"><!--Opens container--><!--Need to reorder images because in md,sm are ot in order-->
-     <h2 itemprop="makesOffer" class="text-center mb-5">Services</h2>
+     <h2 itemprop="makesOffer" class="text-center mb-4 mt-5">Services</h2>
 
     <!---------------------web design------------------->
         <div class="row"><!--Opens container--> 
            <div role="img" aria-label="web design" class="rev col-sm-12 col-md-12 col-lg-6 mt-4 mb-4 text-center">
-            <img src="images/web-design.jpg" alt="Web Design" class="img-fluid rounded" width="400px" height="400px">
+            <picture>
+              <!--web design-->
+              <source  srcset="images/web-design-400_x_400.jpg,
+                              images/web-design-800_x_800.jpg 2x,
+                              images/web-design-1200_x_1199.jpg 3x"
+                        media="(min-width: 821px)"/>
+            
+                      
+              <source srcset="images/web-design-300_x_300.jpg,
+                              images/web-design-600_x_600.jpg 2x,
+                              images/web-design-900_x_900.jpg 3x"
+                      media="(min-width: 392px)"/>
+            
+            
+              <source srcset="images/web-design-200_x_200.jpg,
+                              images/web-design-400_x_400.jpg 2x,
+                              images/web-design-600_x_600.jpg 3x"
+                      media="(max-width: 391px)"/>
+            
+              <img class="rounded" src="images/web-design-400_x_400.jpg"
+               alt="Web Design">
+            </picture>
           </div> 
           <div itemprop="makesOffer" class="col-sm-12 col-md-12 col-lg-6">
             <h3 itemprop="makesOffer" class="text-center mt-4 mb-4">Web Design</h3>
@@ -176,7 +317,27 @@
       <!---------------------web development------------------->  
         <div itemprop="makesOffer" class="row"><!--Opens container--> 
             <div role="img" aria-label="web development" class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
-              <img src="images/web-dev.jpg" alt="Web Development" class="img-fluid rounded" width="400px" height="400px">
+          <picture> <!--web development-->
+            <source srcset="images/web-dev-400_x_400.jpg,
+                            images/web-dev-800_x_800.jpg 2x,
+                            images/web-dev-1200_x_1199.jpg 3x"
+                    media="(min-width: 821px)"/>
+
+    
+            <source srcset="images/web-dev-300_x_300.jpg,
+                            images/web-dev-600_x_600.jpg 2x,
+                            images/web-dev-900_x_900.jpg 3x"
+                    media="(min-width: 392px)"/>
+
+
+            <source srcset="images/web-dev-200_x_200.jpg,
+                            images/web-dev-400_x_400.jpg 2x,
+                            images/web-dev-600_x_600.jpg 3x"
+                    media="(max-width: 391px)"/>
+
+<img class="rounded" src="images/web-dev-400_x_400.jpg"
+alt="Web Development">
+</picture>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 order-1">
                 <h3 itemprop="makesOffer" class="text-center mt-4 mb-4">Web development</h3>
@@ -189,11 +350,32 @@
                      we cover every aspect to make your work easy. 
                     </P>
             </div>
+          </div><!--Closes container-->
             <!---------------------wordpress development------------------->
-        </div><!--Closes container-->
+        
         <div itemprop="makesOffer" class="row"><!--Opens container-->
           <div role="img" aria-label="wordpress development" class="col-sm-12 col-md-12 col-lg-6 mt-4 text-center">
-            <img src="images/wordpress.jpg" alt="wordpress development" class="img-fluid rounded" width="400px" height="400px">
+            <picture> <!--word development-->
+              <source srcset="images/wordpress-400_x_400.jpg,
+                              images/wordpress-800_x_800.jpg 2x,
+                              images/wordpress-1200_x_1199.jpg 3x"
+                      media="(min-width: 821px)"/>
+  
+      
+              <source srcset="images/wordpress-300_x_300.jpg,
+                              images/wordpress-600_x_600.jpg 2x,
+                              images/wordpress-900_x_900.jpg 3x"
+                      media="(min-width: 392px)"/>
+  
+  
+              <source srcset="images/wordpress-200_x_200.jpg,
+                              images/wordpress-400_x_400.jpg 2x,
+                              images/wordpress-600_x_600.jpg 3x"
+                      media="(max-width: 391px)"/>
+  
+  <img class="rounded" src="images/wordpress-400_x_400.jpg"
+  alt="Wordpress Development">
+  </picture>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-6">
             <h3 itemprop="makesOffer" class="text-center mt-3 mt-4">Wordpress Development</h3>
@@ -209,10 +391,31 @@
                experience for your visitors. 
             </p>
           </div>
+          </div>
           <!---------------------SEO------------------->
-          <div itemprop="makesOffer" class="row"> <!--Opens container-->
+          <div  itemprop="makesOffer" class="row"> <!--Opens container-->
            <div role="img" aria-label="SEO" class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
-             <img src="images/seo.jpg" class="img-fluid rounded" width="400px" height="400px">
+            <picture> <!--SEO-->
+              <source srcset="images/seo-400_x_400.jpg,
+                              images/seo-800_x_800.jpg 2x,
+                              images/seo-1200_x_1199.jpg 3x"
+                      media="(min-width: 821px)"/>
+  
+      
+              <source srcset="images/seo-300_x_300.jpg,
+                              images/seo-600_x_600.jpg 2x,
+                              images/seo-900_x_900.jpg 3x"
+                      media="(min-width: 392px)"/>
+  
+  
+              <source srcset="images/seo-200_x_200.jpg,
+                              images/seo-400_x_400.jpg 2x,
+                              images/seo-600_x_600.jpg 3x"
+                      media="(max-width: 391px)"/>
+  
+  <img class="rounded" src="images/seo-400_x_400.jpg"
+  alt="SEO">
+  </picture>
            </div>
            <div class="col-sm-12 col-md-12 col-lg-6 mt-4 order-1">
             <h3 itemprop="makesOffer" class="text-center">Search Engine Optimization (SEO)</h3>
@@ -227,36 +430,49 @@
         </div><!--Closes container-->
         
      </div><!--Closes wrap-->
-     </section role="region" ><!--Closes services-->
+     </section role="region"><!--Closes services-->
 <article>
      <div role="heading" aria-level="4" class="container">
-<h4 class="text-center mt-5 mb-5">Contact us today for a free consultation and discuss your web design needs.</h4>
+<h4 class="text-center mt-5 mb-4">Contact us today for a free consultation and discuss your web design needs.</h4>
      </div>
     </article>
+     <!----------------------------------------------------------------Contact Button------------------------------------------------------------------>
 
-    <footer itemscope itemtype="https://schema.org/LocalBusiness"> <!--Need to add why is just center in the middle-->
+     <div class=" container d-flex"> 
+      <a class="btn ms-auto p-2 ps-3 pe-3 m-4 rounded button" id="contactusButton" href="contact.html" aria-label="go to contact us section">Contact Us
+      </a> 
+      </div>
+<!--Finish Contact Butoon-->
+  </main>
+<!----------------------------------------------------------------------Footer-------------------------------------------------------------------------->
+    <footer class="mt-5" itemscope itemtype="https://schema.org/LocalBusiness"> <!--Need to add why is just center in the middle-->
       <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-3 p-2">
     <p itemprop="legalName" class="text-light">
-      <i class="bi bi-c-circle"></i> 2023.Ilusio Design All rights reserved.
+      <i class="bi bi-c-circle"></i> 2023 Ilusio Design
     </p>  
   </div>
   <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p itemprop="address" class="text-light">Ottawa, On Canada</p>
+    <p itemprop="address" class="text-light">
+      <i class="bi bi-geo-fill"></i>Ottawa, On Canada</p>
   </div>
   <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <a itemprop="email" aria-label="go to email" href="#mailto:muri0031@algonquinlive.com" class="text-light">
+    <a itemprop="email" aria-label="go to email" href="mailto:muri0031@algonquinlive.com" class="bfooter">
       <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
       </a>
       </div>
       <div class="col-sm-12 col-md-4 col-lg-3 p-2">
     <p class="text-light">
       <i class="bi bi-telephone-fill"></i>
-      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873">(613) 613-869-6873</a>
+      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873" class="bfooter">(613) 613-869-6873</a>
     </p>
   </div>
   </div><!--Closes row-->
     </footer role="contentinfo">
     </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
     </html>
