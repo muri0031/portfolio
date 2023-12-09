@@ -56,7 +56,7 @@ h1,h2,h3{
  }
 
  .toggler{
-  background-color:var(--bs-primary)
+  background-color:var(--bs-primary);
   color:var(--bs-primary);
  }
 
@@ -128,8 +128,7 @@ h1,h2,h3{
     }
     
     .bfooter:active{
-      color: ;
-    
+      color: var(--bs-tertiary);
     }
     .pfooter{
       font-size: 15pt;
@@ -216,7 +215,14 @@ background-color: #4F4F4F;
   
   #action{
     order: 1;
-  } 
+  }
+  #imgservices{
+    order: 1;
+  }
+  
+  #actions{
+    order: 2;
+  }  
 
  
   
@@ -332,6 +338,13 @@ border-color: white;
   #action{
     order: 2;
   } 
+  #imgservices{
+    order: 1;
+  }
+  
+  #actions{
+    order: 2;
+  } 
 }
 
 
@@ -374,6 +387,13 @@ border-color: white;
 }
 
 #action{
+  order: 2;
+} 
+#imgservices{
+  order: 1;
+}
+
+#actions{
   order: 2;
 } 
 }
