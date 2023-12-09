@@ -21,7 +21,7 @@
       <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">
         Skip to Main content</a>
 
-    <nav id="menu" role="navigation" class="navbar navbar-expand-lg">
+    <nav id="menu" role="navigation" class="navbar navbar-expand-lg navcontact d-flex align-items-start">
       <div class="container-fluid  ps-5 nav d-flex flex-row align-items-start">
         <a class="navbar-brand" href="index.html"> 
           <img src="images/Logo-ID.png" width="150" height="150">
@@ -37,9 +37,10 @@
             <li class="nav-item ps-5 pe-5">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item ps-5 pe-5">
+            <li class="nav-item ps-5">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
+          </ul>
               <ul class="navbar-nav  flex-wrap text-light pt-5">
                 <li class="nav-item col-6 col-md-auto ps-5">
                   <a class="iconssocial" href="https://www.linkedin.com/in/karla-murillo-113b25297/"> 
@@ -60,11 +61,11 @@
     <!---------------------------------------------------------------------------Contact Us section------------------------------------------------------->
 <!--Infomation about the company-->
   <main itemid="panel" itemscope itemtype="https://schema.org/LocalBusiness" id="main">       <!--Needs to make biiger labels in form and put mapp in center-->
-    <section role="region">
+    <section data-aos="fade-up" role="region">
       <div class="container mt-5">
       <h1 class="text-center mb-5">Contact Us</h1>
       <div class="row justify-content-center"><!--Opens row-->
-      <div data-aos="fade-up-right" class="col-sm-12 col-md-6 col-lg-6 mt-4  adress"><!--Opens col-->
+      <div class="col-sm-12 col-md-6 col-lg-6 mt-4  adress"><!--Opens col-->
         <h4>Email</h4>
         <p itemprop="email">muri0031@algonquinlive.com</p>
         <h4>Phone Number</h4>
@@ -74,7 +75,7 @@
       </div><!--Closes col-->
 
       <!--Contact Form-->
-      <div data-aos="fade-up-left" role="form" id="contact-info" aria-label="Contact information" class="col-sm-12 col-md-6 col-lg-6 m4 form"><!--Opens col-->
+      <div role="form" id="contact-info" aria-label="Contact information" class="col-sm-12 col-md-6 col-lg-6 m4 form"><!--Opens col-->
              <h3 class="text-center pt-4 pb-4">Leave us a Message</h3>
              <form action="/submit" method="get">
                  <label for="name"> Name</label><br>
@@ -90,7 +91,7 @@
          </div><!--Closes col-->
 
          <!--Map-->
-         <div data-aos="fade-up" class="col-md-12 col-md-6 col-lg-6 mt-4 justify-content-center"><!--opens col-->
+         <div class="col-md-12 col-md-6 col-lg-6 mt-4 justify-content-center"><!--opens col-->
           <h3 class="text-center mb-5 mt-4">Map</h3>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359540.0384709239!2d-76.1298991350991!3d45.24968242926801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1700363339585!5m2!1sen!2sca" 
           width="600" height="450" style="border:0;"
@@ -102,7 +103,7 @@
     </div><!--Closes container-->
       </section><!--Closes Contact-->
 
-      <section role="region"><!--Opens FAQ-->
+      <section data-aos="fade-up-right" role="region"><!--Opens FAQ-->
         <div class="container mt-5 mb-5 wrap-faq"><!--Opens wrap-->
            <h2 class="text-center">FAQ</h2>
         
@@ -170,17 +171,20 @@ The cost might vary depending on the complexity of the project. </p>
   </p>  
 </div>
 <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-  <p itemprop="address" class="text-light">
+  <p itemprop="address" class="text-light pfooter">
     <i class="bi bi-geo-fill"></i>
     Ottawa, On Canada</p>
 </div>
 <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-  <a itemprop="email" aria-label="go to email" href="mailto:muri0031@algonquinlive.com" class="bfooter">
-    <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
+  <p class="pfooter">
+    <i class="bi bi-envelope-at-fill"></i>  
+    <a itemprop="email" aria-label="go to email" href="mailto:muri0031@algonquinlive.com" class="bfooter">
+   muri0031@algonquinlive.com
     </a>
+  </p>
     </div>
-    <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-  <p class="text-light">
+    <div class="col-sm-12 col-md-4 col-lg-3 p-2 pfooter">
+  <p class="text-light pfooter">
     <i class="bi bi-telephone-fill"></i>
     <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873" class="bfooter">(613) 613-869-6873</a>
   </p>

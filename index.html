@@ -17,6 +17,7 @@
 
 
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <div class="navheader">
     <header itemscope itemtype="https://schema.org/LocalBusiness">
       <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">
         Skip to Main content</a>
@@ -24,7 +25,7 @@
     <nav id="menu" role="navigation" class="navbar navbar-expand-lg">
       <div class="container-fluid  ps-5 nav d-flex flex-row align-items-start">
         <a class="navbar-brand" href="index.html"> 
-          <img src="images/Logo-ID.png" width="150" height="150">
+          <img src="images/Logo-ID.png" width="100" height="100">
         </a>
         <button class="navbar-toggler toggler text-light border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,9 +38,10 @@
             <li class="nav-item ps-5 pe-5">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item ps-5 pe-5">
+            <li class="nav-item ps-5 ">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
+              </ul>
               <ul class="navbar-nav  flex-wrap text-light pt-5">
                 <li class="nav-item col-6 col-md-auto ps-5">
                   <a class="iconssocial" href="https://www.linkedin.com/in/karla-murillo-113b25297/"> 
@@ -65,15 +67,16 @@
         <div role="img" aria-label="home page header" class="card text-bg-dark"><!--opens wrap-->
          <img src="images/home.jpg" class="card-img" alt="home">
          <div class="card-img-overlay home d-flex flex-column justify-content-start align-items-center"> <!--opens container-->
-         <h1 itemprop="legalName" id="hhome" class="display-1 p-4 rounded">
+         <h1 data-aos="flip-down" itemprop="legalName" id="hhome" class="display-1 p-4 rounded ilusio">
          Ilusio Design
           </h1>
-          <p id="phome" itemprop="slogan" class="p-4 rounded">
+          <p data-aos="flip-down" id="phome" itemprop="slogan" class="p-4 rounded">
           <strong> The perfect combination of creativity, innovation, and experience</strong>
          </p>
          </div> <!--Closes container-->
         </div> <!--Closes wrap--> 
        </section>
+      </div> <!--Closes navheader-->
         <!-----------------------------------------------------------------H4 Info----------------------------------------------------------------------->  
     <section role="region"> 
         <div data-aos="fade-up"
@@ -317,8 +320,8 @@
         </div><!--Closes container-->
 
       <!---------------------web development------------------->  
-        <div itemprop="makesOffer" class="row"><!--Opens container--> 
-            <div data-aos="zoom-in-up" role="img" aria-label="web development" class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
+        <div id="services" itemprop="makesOffer" class="row"><!--Opens container--> 
+            <div id="imgservice" data-aos="zoom-in-up" role="img" aria-label="web development" class="col-sm-12 col-md-12 col-lg-6  mt-4 text-center">
           <picture> <!--web development-->
             <source srcset="images/web-dev-400_x_400.jpg,
                             images/web-dev-800_x_800.jpg 2x,
@@ -341,7 +344,7 @@
 alt="Web Development">
 </picture>
             </div>
-            <div data-aos="fade-right" class="col-sm-12 col-md-12 col-lg-6 order-1">
+            <div id="action" data-aos="fade-right" class="col-sm-12 col-md-12 col-lg-6">
                 <h3 itemprop="makesOffer" class="text-center mt-4 mb-4">Web development</h3>
                 <P itemprop="description">Ilusio Design offers exceptional web development services
                      that turn your digital dreams to your own website. 
@@ -396,7 +399,7 @@ alt="Web Development">
           </div>
           <!---------------------SEO------------------->
           <div  itemprop="makesOffer" class="row"> <!--Opens container-->
-           <div data-aos="zoom-in-up" role="img" aria-label="SEO" class="col-sm-12 col-md-12 col-lg-6 order-2 mt-4 text-center">
+           <div id="imgservice" data-aos="zoom-in-up" role="img" aria-label="SEO" class="col-sm-12 col-md-12 col-lg-6  mt-4 text-center imgservice">
             <picture> <!--SEO-->
               <source srcset="images/seo-400_x_400.jpg,
                               images/seo-800_x_800.jpg 2x,
@@ -419,7 +422,7 @@ alt="Web Development">
   alt="SEO">
   </picture>
            </div>
-           <div data-aos="fade-right" class="col-sm-12 col-md-12 col-lg-6 mt-4 order-1">
+           <div id="action" data-aos="fade-right" class="col-sm-12 col-md-12 col-lg-6 mt-4 service">
             <h3 itemprop="makesOffer" class="text-center">Search Engine Optimization (SEO)</h3>
 
             <p itemprop="description">
@@ -475,6 +478,5 @@ alt="Web Development">
   <script>
     AOS.init();
   </script>
-    </main>
   </body>
 </html>

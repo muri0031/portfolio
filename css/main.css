@@ -64,6 +64,9 @@ h1,h2,h3{
   color: white;
 
  }
+.navheader{
+  background-color: #4F4F4F;
+}
 
  .iconssocial{
     color: var(--bs-secondary);
@@ -128,6 +131,9 @@ h1,h2,h3{
       color: ;
     
     }
+    .pfooter{
+      font-size: 15pt;
+    }
     
 
 /*Skip Links*/
@@ -162,7 +168,11 @@ h1,h2,h3{
 .navhome{
   background-color: #4F4F4F;
 }
-#h1home, #phome{
+.ilusio{
+color:var(--bs-secondary);
+background-color: #4F4F4F;
+}
+ #phome{
  background-color: var(--bs-primary);
  color: white;
  opacity: 90%;
@@ -198,6 +208,17 @@ h1,h2,h3{
   .review{
     border-style:outset;
   }
+
+  /* Services */
+  #imgservice{
+    order: 2;
+  }
+  
+  #action{
+    order: 1;
+  } 
+
+ 
   
 /**************************************************************** About Page *******************************************************************/
 
@@ -303,7 +324,16 @@ border-color: white;
         font-size: 15pt;
   
     }
+  
+  #imgservice{
+    order: 1;
   }
+  
+  #action{
+    order: 2;
+  } 
+}
+
 
   /*******************************  Mobile Verison *************************/
 @media (max-width:400px) {
@@ -337,4 +367,13 @@ border-color: white;
    
     font-size: 12pt;
   }
+
+
+#imgservice{
+  order: 1;
+}
+
+#action{
+  order: 2;
+} 
 }
