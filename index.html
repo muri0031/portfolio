@@ -1,88 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilusio Design </title>
-    <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
- <!--Bootstrap Icons-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
- <!--Link AOS animations-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+<!--Bootstrap Icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Own Css--> 
+    <link rel="stylesheet" href="css/main.css">
+     <!--Link AOS animations-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/main.css">
-</head>
+    <title>ilusio Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
 
 
-<body>
-  <!--------------------------------------------------------------- Nav Section ----------------------------------------------------------------------->
-  <div class="navsection"><!--opens navsection-->
-    <header itemscope itemtype="https://schema.org/LocalBusiness" role="banner">
-      <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">Skip to Main content</a>
-    <nav role="navigation" class="navbar navbar-expand-md navhome" data-bs-theme="dark">
-      <div class="container-fluid ps-5 navbut"><!--Opens container-->>
-        <a  aria-label="go to home page" class="navbar-brand" href="index.html"><!--Logo home-->
-          <img itemprop="logo" id="Logo" src="images/Logo-ID.png" alt="Ilusio Design" width="120px" height="100px"><!-- [Logo] -->
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <header itemscope itemtype="https://schema.org/LocalBusiness">
+      <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">
+        Skip to Main content</a>
+
+    <nav id="menu" role="navigation" class="navbar navbar-expand-lg">
+      <div class="container-fluid  ps-5 nav d-flex flex-row align-items-start">
+        <a class="navbar-brand" href="index.html"> 
+          <img src="images/Logo-ID.png" width="150" height="150">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler toggler text-light border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-around" id="menu"> <!--Opens wrap-->
-          <ul class="navbar-nav flex-row flex-no-wrap">
+        <div class="collapse navbar-collapse justify-content-around navbut" id="navbarSupportedContent">
+          <ul class="navbar-nav nav flex-row flex-no-wrap pt-5">
             <li class="nav-item ps-5 pe-5">
-              <a aria-current="page" aria-label="go to home Page" href="index.html" class="nav-link active" >Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item ps-5 pe-5">
-              <a aria-label="go to about page" href="about.html" class="nav-link ">About Us</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item ps-5 pe-4">
-              <a aria-label="go to contact page" href="contact.html" class="nav-link " >Contact</a>
-            </li>
-          </ul> 
-          </div><!--Closes wrap-->
-            <!--Media Icons--> 
-          <div><!--Opens wrap-->
-            <ul class="navbar-nav flex-row flex-wrap text-light">
-             <li class="nav-item col-6 col-md-auto ps-5">
-             <a class="iconssocial" href="https://www.linkedin.com/in/karla-murillo-113b25297/"> <i class="bi bi-linkedin" role="link"></i>
-             </a> 
-            </li>
-            <li class="nav-item col-6 col-md-auto ps-5 pe-5">
-             <a class="iconssocial" href="https://github.com/muri0031/muri0031.github.io"><i class="bi bi-github" role="link"></i>
-             </a>
-            </li>
-          </ul>
-        </div><!--Closes wrap-->
-      </div><!--Closes container-->
+            <li class="nav-item ps-5 pe-5">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <ul class="navbar-nav  flex-wrap text-light pt-5">
+                <li class="nav-item col-6 col-md-auto ps-5">
+                  <a class="iconssocial" href="https://www.linkedin.com/in/karla-murillo-113b25297/"> 
+                    <i class="bi bi-linkedin" role="link"></i>
+                  </a> 
+                 </li>
+                 <li class="nav-item col-6 col-md-auto ps-5 pe-5">
+                  <a class="iconssocial" href="https://github.com/muri0031/muri0031.github.io">
+                    <i class="bi bi-github" role="link"></i>
+                  </a>
+                </li>
+              </ul>
+        </div>
+      </div>
     </nav>
-  </header>
-  
-  <main itemscope itemprop="https://schema.org/LocalBusiness" id="main"> 
-     <!-------------------------------------------------------------- Banner Section -------------------------------------------------------------->
+</header> 
+    <!-- End Example Code -->
 
-     <section  role="region" id="home" class="banner-home py-1">
-     <div role="img" aria-label="home page header" class="card text-bg-dark"><!--opens wrap-->
-      <img src="images/home.jpg" class="card-img" alt="home">
-      <div class="card-img-overlay home d-flex flex-column justify-content-start align-items-center"> <!--opens container-->
-      <h1 itemprop="legalName" id="hhome" class="display-1 p-4 rounded">
-      Ilusio Design
-       </h1>
-       <p id="phome" itemprop="slogan" class="p-4 rounded">
-       <strong> The perfect combination of creativity, innovation, and experience</strong>
-      </p>
-      </div> <!--Closes container-->
-     </div> <!--Closes wrap--> 
-     </div> <!--Closes navsection-->
-    </section>
-    <!-----------------------------------------------------------------H4 Info----------------------------------------------------------------------->  
+    <main itemscope itemprop="https://schema.org/LocalBusiness" id="main"> 
+        <!-------------------------------------------------------------- Banner Section -------------------------------------------------------------->
+   
+        <section  role="region" id="home" class="banner-home py-1">
+        <div role="img" aria-label="home page header" class="card text-bg-dark"><!--opens wrap-->
+         <img src="images/home.jpg" class="card-img" alt="home">
+         <div class="card-img-overlay home d-flex flex-column justify-content-start align-items-center"> <!--opens container-->
+         <h1 itemprop="legalName" id="hhome" class="display-1 p-4 rounded">
+         Ilusio Design
+          </h1>
+          <p id="phome" itemprop="slogan" class="p-4 rounded">
+          <strong> The perfect combination of creativity, innovation, and experience</strong>
+         </p>
+         </div> <!--Closes container-->
+        </div> <!--Closes wrap--> 
+       </section>
+        <!-----------------------------------------------------------------H4 Info----------------------------------------------------------------------->  
     <section role="region"> 
-      <div data-aos="fade-up"
-      data-aos-anchor-placement="top-center" class="container mt-5 mb-5">
-      <h4> We are here to convert your dreams into reality. Whether you're a small business owner, an entrepreneur, or a big company we have the perfect web design strategy for you.</h4>
-    </div>
-    </section>
-<!-------------------------------------------------------------------------Why choose us section----------------------------------------------------------->
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-center" class="container mt-5 mb-5">
+        <h4> We are here to convert your dreams into reality. Whether you're a small business owner, an entrepreneur, or a big company we have the perfect web design strategy for you.</h4>
+      </div>
+      </section>
+      <!-------------------------------------------------------------------------Why choose us section----------------------------------------------------------->
       <section role="region" class="choose-us">
         <div class="container"><!--Opens wrap-->
         <h2 itemprop="seeks" class="text-center rounded pt-5 pb-3">Why to choose us</h2>
@@ -103,8 +102,7 @@
             </div><!--Closes Container-->
           </div>
         </div><!--Closes wrap-->
-
-<!---------------------------------------------------------------------Portfolio section---------------------------------------------------------------->
+        <!---------------------------------------------------------------------Portfolio section---------------------------------------------------------------->
         <section role="region"><!--Portfolio-->
             <h2 itemprop="makesOffer" class="text-center pt-3 pb-2" > Portfolio</h2>
         <div class="container"><!--Opens wrap-->
@@ -223,7 +221,7 @@
   </div><!--Closes row-->
       </div>
       </section>
-<!----------------------------------------------------------------------Reviews section----------------------------------------------------------------->
+      <!----------------------------------------------------------------------Reviews section----------------------------------------------------------------->
       <section role="region" itemscope itemtype="https://schema.org/LocalBusiness"> 
         <h2 itemprop="review" class="text-center pt-4 pb-2">Reviews</h2>
         <div class="container mt-5 bg-secondary-subtle">   
@@ -448,36 +446,35 @@ alt="Web Development">
       </div>
 <!--Finish Contact Butoon-->
   </main>
-<!----------------------------------------------------------------------Footer-------------------------------------------------------------------------->
-    <footer class="mt-5" itemscope itemtype="https://schema.org/LocalBusiness"> <!--Need to add why is just center in the middle-->
-      <div class="row">
-        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p itemprop="legalName" class="text-light">
-      <i class="bi bi-c-circle"></i> 2023 Ilusio Design
-    </p>  
-  </div>
-  <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p itemprop="address" class="text-light">
-      <i class="bi bi-geo-fill"></i>Ottawa, On Canada</p>
-  </div>
-  <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <a itemprop="email" aria-label="go to email" href="mailto:muri0031@algonquinlive.com" class="bfooter">
-      <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
-      </a>
-      </div>
+  <!----------------------------------------------------------------------Footer-------------------------------------------------------------------------->
+  <footer class="mt-5" itemscope itemtype="https://schema.org/LocalBusiness"> <!--Need to add why is just center in the middle-->
+    <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p class="text-light">
-      <i class="bi bi-telephone-fill"></i>
-      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873" class="bfooter">(613) 613-869-6873</a>
-    </p>
-  </div>
-  </div><!--Closes row-->
-    </footer role="contentinfo">
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    </body>
-   
-    
-    </html>
+  <p itemprop="legalName" class="text-light">
+    <i class="bi bi-c-circle"></i> 2023 Ilusio Design
+  </p>  
+</div>
+<div class="col-sm-12 col-md-4 col-lg-3 p-2">
+  <p itemprop="address" class="text-light">
+    <i class="bi bi-geo-fill"></i>Ottawa, On Canada</p>
+</div>
+<div class="col-sm-12 col-md-4 col-lg-3 p-2">
+  <a itemprop="email" aria-label="go to email" href="mailto:muri0031@algonquinlive.com" class="bfooter">
+    <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
+    </a>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+  <p class="text-light">
+    <i class="bi bi-telephone-fill"></i>
+    <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873" class="bfooter">(613) 613-869-6873</a>
+  </p>
+</div>
+</div><!--Closes row-->
+  </footer role="contentinfo">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    </main>
+  </body>
+</html>

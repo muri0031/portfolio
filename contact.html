@@ -1,193 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilusio Design </title>
-    <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
- <!--Bootstrap Icons-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-   <!--Link AOS animations-->
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<!--Ask if itmp type and item scope goes in each section or just in main to covr all sections-->
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+<!--Bootstrap Icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--Own Css--> 
+    <link rel="stylesheet" href="css/main.css">
+     <!--Link AOS animations-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>ilusio Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <header itemscope itemtype="https://schema.org/LocalBusiness">
+      <a aria-hidden='true' aria-label="go to main" href="#main" class="skip">
+        Skip to Main content</a>
+
+    <nav id="menu" role="navigation" class="navbar navbar-expand-lg">
+      <div class="container-fluid  ps-5 nav d-flex flex-row align-items-start">
+        <a class="navbar-brand" href="index.html"> 
+          <img src="images/Logo-ID.png" width="150" height="150">
+        </a>
+        <button class="navbar-toggler toggler text-light border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <div class="collapse navbar-collapse justify-content-around navbut" id="navbarSupportedContent">
+          <ul class="navbar-nav nav flex-row flex-no-wrap pt-5">
+            <li class="nav-item ps-5 pe-5">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item ps-5 pe-5">
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li class="nav-item ps-5 pe-5">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <ul class="navbar-nav  flex-wrap text-light pt-5">
+                <li class="nav-item col-6 col-md-auto ps-5">
+                  <a class="iconssocial" href="https://www.linkedin.com/in/karla-murillo-113b25297/"> 
+                    <i class="bi bi-linkedin" role="link"></i>
+                  </a> 
+                 </li>
+                 <li class="nav-item col-6 col-md-auto ps-5 pe-5">
+                  <a class="iconssocial" href="https://github.com/muri0031/muri0031.github.io">
+                    <i class="bi bi-github" role="link"></i>
+                  </a>
+                </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
-    
-  </header>
-<!---------------------------------------------------------------------------Contact Us section------------------------------------------------------->
+</header> 
+
+    <!---------------------------------------------------------------------------Contact Us section------------------------------------------------------->
 <!--Infomation about the company-->
   <main itemid="panel" itemscope itemtype="https://schema.org/LocalBusiness" id="main">       <!--Needs to make biiger labels in form and put mapp in center-->
-      <section role="region">
-        <div class="container mt-5">
-        <h1 class="text-center mb-5">Contact Us</h1>
-        <div class="row justify-content-center"><!--Opens row-->
-        <div data-aos="fade-up-right" class="col-sm-12 col-md-6 col-lg-6 mt-4  adress"><!--Opens col-->
-          <h4>Email</h4>
-          <p itemprop="email">muri0031@algonquinlive.com</p>
-          <h4>Phone Number</h4>
-          <p itemprop="telephone">613-869-6873</p>
-          <h4>Location</h4>
-          <p itemprop="address">Ottawa, ON Canada</p>
-        </div><!--Closes col-->
+    <section role="region">
+      <div class="container mt-5">
+      <h1 class="text-center mb-5">Contact Us</h1>
+      <div class="row justify-content-center"><!--Opens row-->
+      <div data-aos="fade-up-right" class="col-sm-12 col-md-6 col-lg-6 mt-4  adress"><!--Opens col-->
+        <h4>Email</h4>
+        <p itemprop="email">muri0031@algonquinlive.com</p>
+        <h4>Phone Number</h4>
+        <p itemprop="telephone">613-869-6873</p>
+        <h4>Location</h4>
+        <p itemprop="address">Ottawa, ON Canada</p>
+      </div><!--Closes col-->
 
-        <!--Contact Form-->
-        <div data-aos="fade-up-left" role="form" id="contact-info" aria-label="Contact information" class="col-sm-12 col-md-6 col-lg-6 m4 form"><!--Opens col-->
-               <h3 class="text-center pt-4 pb-4">Leave us a Message</h3>
-               <form action="/submit" method="get">
-                   <label for="name"> Name</label><br>
-                   <input type="text" id="name" name="name"><br>
-                   <label for="company"> Company</label><br>
-                   <input type="text" id="company" name="company"><br>
-                   <label for="email">Email:</label><br>
-                   <input type="email" id="email" name="email"><br>
-                   <label for="message">Leave us a message:</label><br>
-                   <textarea id="message" name="message" ></textarea><br>
-                   <input id="submit" type="submit" value="Submit">
-                  </form>
-           </div><!--Closes col-->
+      <!--Contact Form-->
+      <div data-aos="fade-up-left" role="form" id="contact-info" aria-label="Contact information" class="col-sm-12 col-md-6 col-lg-6 m4 form"><!--Opens col-->
+             <h3 class="text-center pt-4 pb-4">Leave us a Message</h3>
+             <form action="/submit" method="get">
+                 <label for="name"> Name</label><br>
+                 <input type="text" id="name" name="name"><br>
+                 <label for="company"> Company</label><br>
+                 <input type="text" id="company" name="company"><br>
+                 <label for="email">Email:</label><br>
+                 <input type="email" id="email" name="email"><br>
+                 <label for="message">Leave us a message:</label><br>
+                 <textarea id="message" name="message" ></textarea><br>
+                 <input id="submit" type="submit" value="Submit">
+                </form>
+         </div><!--Closes col-->
 
-           <!--Map-->
-           <div data-aos="fade-up" class="col-md-12 col-md-6 col-lg-6 mt-4 justify-content-center"><!--opens col-->
-            <h3 class="text-center mb-5 mt-4">Map</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359540.0384709239!2d-76.1298991350991!3d45.24968242926801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1700363339585!5m2!1sen!2sca" 
-            width="600" height="450" style="border:0;"
-             allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-           </div><!--Closes col-->
-        </div><!--Closes row-->
-      </div><!--Closes container-->
-        </section><!--Closes Contact-->
+         <!--Map-->
+         <div data-aos="fade-up" class="col-md-12 col-md-6 col-lg-6 mt-4 justify-content-center"><!--opens col-->
+          <h3 class="text-center mb-5 mt-4">Map</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359540.0384709239!2d-76.1298991350991!3d45.24968242926801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1700363339585!5m2!1sen!2sca" 
+          width="600" height="450" style="border:0;"
+           allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+         </div><!--Closes col-->
+      </div><!--Closes row-->
+    </div><!--Closes container-->
+      </section><!--Closes Contact-->
 
-        <section role="region"><!--Opens FAQ-->
-          <div class="container mt-5 mb-5 wrap-faq"><!--Opens wrap-->
-             <h2 class="text-center">FAQ</h2>
-          
-    <div class="row mt-4">        
+      <section role="region"><!--Opens FAQ-->
+        <div class="container mt-5 mb-5 wrap-faq"><!--Opens wrap-->
+           <h2 class="text-center">FAQ</h2>
+        
+  <div class="row mt-4">        
 <div class="col-sm-12 col-md-6 col-lg-6"><!--Opens Container-->
 <h4>What is the meaning of Web design, and why is it essential?</h4>
 <p>It is the process of creating a website, which must be visually attractive.
-   It is essential because it directly impacts how visitors perceive your brand
-    and navigate your online content.</p>
+ It is essential because it directly impacts how visitors perceive your brand
+  and navigate your online content.</p>
 </div><!--Closes col-->
 <div class="col-sm-12 col-md-6 col-lg-6"><!--Opens Container-->
 <h4>
-  What makes a website "responsive," and why is it necessary?
+What makes a website "responsive," and why is it necessary?
 </h4>
 <p>
-  A responsive website can be adapted to various screen sizes,
-   guaranteeing it looks and functions well on mobile devices, tablets, and desktops. 
-  It is necessary to increase viewers and improve SEO rankings.e magna.
+A responsive website can be adapted to various screen sizes,
+ guaranteeing it looks and functions well on mobile devices, tablets, and desktops. 
+It is necessary to increase viewers and improve SEO rankings.e magna.
 </p>
 </div><!--Closes col-->
 <div class="col-sm-12 col-md-6 col-lg-6"><!--Opens container-->
 <h4> Can you merge my existing branding and logo into the website project?</h4>
 <p>Completely! We highlight brand consistency and will combine 
-  your existing branding elements perfectly with your website.</p>
+your existing branding elements perfectly with your website.</p>
 </div><!--Closes col-->
 <div class="col-sm-12 col-md-6 col-lg-6"><!--Opens container-->
 <h4>Do you offer e-commerce website design services?</h4>
 <p>Yes, we are specialists in creating secure and adequate e-commerce
-   platforms for businesses that need to sell products or services online.</p>
+ platforms for businesses that need to sell products or services online.</p>
 </div><!--Closes col-->
 <div class="col-sm-12 col-md-6 col-lg-6"><!--Opens col-->
 <h4>Can I update my website content after it is designed?</h4>
 <p>Yes, we provide content management systems this means that you can easily update
-   and manage your website content without technical expertise.</p>
+ and manage your website content without technical expertise.</p>
 </div><!--Closes col-->
 <div class="col-sm-12 col-md-6 col-lg-6"><!--Opens col-->
 <h4>Will my website be optimized for search engines (SEO)?</h4>
 <p>Yes, we are specialists in implementing SEO practices to improve your website's visibility 
-  on search engines and drive organic traffic to your site..</p>
+on search engines and drive organic traffic to your site..</p>
 </div><!--Closes col-->
 <div class="col-sm-12 col-md-6 col-lg-6"><!--Opens col-->
 <h4>How long does it take to complete a web design project and how much does it cost ?</h4>
 <p>Time might vary based on client needs. Commonly, a basic website might take a few weeks,
-   while more complex projects may take a few months. 
-  The cost might vary depending on the complexity of the project. </p>
+ while more complex projects may take a few months. 
+The cost might vary depending on the complexity of the project. </p>
 </div><!--Closes col-->
 <div class="col-sm-12 col-md-6 col-lg-6"><!--Opens col-->
 <h4>How do I get started with a web design project?</h4>
 <p>To get started, contact us via phone, email,
-   or fill out the contact form on our website to book a consultation
-    to discuss your needs and start the design project.</p>
+ or fill out the contact form on our website to book a consultation
+  to discuss your needs and start the design project.</p>
 </div><!--Closes col-->
 
-          </div><!--Closes row-->
-         </div><!--Closes container-->
-        
-        </section><!--Closes FAQ-->
-      </main>
-       
-    <footer itemscope itemtype="https://schema.org/LocalBusiness" role="contentinfo"> <!--Need to add why is just center in the middle-->
-      <div class="row">
-        <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p itemprop="legalName" class="text-light">
-      <i class="bi bi-c-circle"></i> 2023 Ilusio Design
-    </p>  
-  </div>
-  <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p itemprop="address" class="text-light">
-      <i class="bi bi-geo-fill"></i>
-      Ottawa, On Canada</p>
-  </div>
-  <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <a itemprop="email" aria-label="go to email" href="mailto:muri0031@algonquinlive.com" class="bfooter">
-      <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
-      </a>
-      </div>
+        </div><!--Closes row-->
+       </div><!--Closes container-->
+      
+      </section><!--Closes FAQ-->
+    </main>
+     
+  <footer itemscope itemtype="https://schema.org/LocalBusiness" role="contentinfo"> <!--Need to add why is just center in the middle-->
+    <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-3 p-2">
-    <p class="text-light">
-      <i class="bi bi-telephone-fill"></i>
-      <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873" class="bfooter">(613) 613-869-6873</a>
-    </p>
-  </div>
-  </div><!--Closes row-->
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    </body>
-    
-    </html>
+  <p itemprop="legalName" class="text-light">
+    <i class="bi bi-c-circle"></i> 2023 Ilusio Design
+  </p>  
+</div>
+<div class="col-sm-12 col-md-4 col-lg-3 p-2">
+  <p itemprop="address" class="text-light">
+    <i class="bi bi-geo-fill"></i>
+    Ottawa, On Canada</p>
+</div>
+<div class="col-sm-12 col-md-4 col-lg-3 p-2">
+  <a itemprop="email" aria-label="go to email" href="mailto:muri0031@algonquinlive.com" class="bfooter">
+    <i class="bi bi-envelope-at-fill"></i>  muri0031@algonquinlive.com 
+    </a>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-3 p-2">
+  <p class="text-light">
+    <i class="bi bi-telephone-fill"></i>
+    <a itemprop="telephone" aria-label="613.869.6873" href="tel:6138696873" class="bfooter">(613) 613-869-6873</a>
+  </p>
+</div>
+</div><!--Closes row-->
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+  
+  </html>
+  </body>
+</html>
