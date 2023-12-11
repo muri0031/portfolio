@@ -42,6 +42,9 @@ h1,h2,h3{
 .navbar{
   background-color: var(--bs-primary);
 }
+
+main{
+}
 #menu ul  li a{
   color:white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
